@@ -310,7 +310,7 @@
           } else if (contentType.includes('application/json')) {
             const data = await res.json();
             if(data.success){
-              usuarioActivo = fd.get('usuario'); passwordActivo = fd.get('password');
+              usuarioActivo = fd.get('user'); passwordActivo = fd.get('password');
               userLabel.textContent = usuarioActivo;
               loginForm.closest('#loginCard').style.display = 'none';
               formArea.classList.add('show');
