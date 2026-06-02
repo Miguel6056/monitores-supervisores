@@ -856,7 +856,7 @@
       saveBtn.disabled = true;
       saveBtn.textContent = 'Guardando...';
       const formData = new FormData(form);
-      formData.append('usuario', usuarioActivo || 'anónimo');
+      formData.append('user', usuarioActivo || 'anónimo');
       formData.append('password', passwordActivo || '');
       formData.append('formType', 'monitoreo2');
       // mostrar en consola el contenido del FormData para depuración
